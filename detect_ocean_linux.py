@@ -30,7 +30,7 @@ import numpy as np
 import sys
 from boxcrop import boxcrop_yolo
 import pandas as pd
-import gopro_get_GPS_wincon
+import gopro_get_GPS
 from PIL import Image
 # from PIL.ExifTags import TAGS, GPSTAGS
 from datetime import datetime
@@ -188,7 +188,7 @@ def detect(config, save_img=False):
 
                 
                 
-                coords              = gopro_get_GPS_wincon.gopro_get_GPS(path)   
+                coords              = gopro_get_GPS.gopro_get_GPS(path)   
                 
                 counter+=1
                 
